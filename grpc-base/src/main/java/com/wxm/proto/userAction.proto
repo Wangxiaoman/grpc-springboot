@@ -1,0 +1,39 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.wxm.user";
+option java_outer_classname = "UserActionProto";
+
+// The greeting service definition.
+service UserAction {
+
+    rpc saveUserAction (UserActionRequest) returns (UserActionReply) {
+    }
+    
+    rpc saveUserActions(UserActionsRequest) returns (UserActionReply) {
+    }
+    
+    rpc getUserAction(UserActionsRequest) returns(UserActionReply){
+    }
+}
+
+// The request message containing the user's name.
+message UserActionRequest {
+    string user = 1;
+    string itemSetId = 2;
+    string itemId = 3;
+    int32 action = 4;
+}
+
+message UserActionsRequest {
+    string user = 1;
+    string itemSetId = 2;
+    string itemIds = 3;
+    int32 action = 4;
+}
+
+// The response message containing the greetings
+message UserActionReply {
+    string message = 1;
+}
+
