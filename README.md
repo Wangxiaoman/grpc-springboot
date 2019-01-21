@@ -2,7 +2,7 @@
 
 利用github上 yidongnan/grpc-spring-boot-starter 来实现
 
-#1、PB（protobuf)
+# 1、PB（protobuf)
 
 安装：
 github：https://github.com/protocolbuffers/protobuf
@@ -25,7 +25,7 @@ e.g.
 
 protoc -I=/Users/xiaoman/grcCodegen --java_out=/Users/xiaoman/grcCodegen /Users/xiaoman/grcCodegen/helloworld.proto
 
-2、GRPC
+# 2、GRPC
 github：https://github.com/grpc/grpc-java
 
 grpc代码生成（基于protoc文件）
