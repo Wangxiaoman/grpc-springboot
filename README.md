@@ -24,7 +24,7 @@ protoc -I=$SRC_DIR --java_out=$DST_DIR $SRC_DIR/addressbook.proto
 
 e.g.
 
-protoc -I=/Users/xiaoman/grcCodegen --java_out=/Users/xiaoman/grcCodegen /Users/xiaoman/grcCodegen/helloworld.proto
+protoc -I=/grcCodegen --java_out=/grcCodegen /grcCodegen/helloworld.proto
 
 # 2、GRPC
 github：https://github.com/grpc/grpc-java
@@ -38,7 +38,7 @@ protoc --plugin=protoc-gen-grpc-java=build/exe/java_plugin/protoc-gen-grpc-java 
 
 e.g.
 
-cd /Users/xiaoman/workspace/grpc-java/compiler
+cd /workspace/grpc-java/compiler
 
-protoc --plugin=protoc-gen-grpc-java=build/exe/java_plugin/protoc-gen-grpc-java --grpc-java_out="/Users/xiaoman/grcCodegen" --proto_path="/Users/xiaoman/grcCodegen" "helloworld.proto"
+protoc --plugin=protoc-gen-grpc-java=build/exe/java_plugin/protoc-gen-grpc-java --grpc-java_out="/grcCodegen" --proto_path="/grcCodegen" "helloworld.proto"
 
